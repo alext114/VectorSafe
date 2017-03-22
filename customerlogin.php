@@ -13,7 +13,7 @@
     <div class="jumbotron" style="background-color:#CCD1D1;">
             <div class="container text-center">
                 <h1>VectorSafe</h1>
-                <p>By_Hubbie and the Johnson</p>
+                <p>By_Hubbie and the Johnsons</p>
                
 
             </div>
@@ -21,7 +21,7 @@
 <div style="background-color:#CCD1D1;">
     <div class="container">
        <div class="jumbotron" style="background-color:#337ab7;">
-             <p> Welcome to Vector Safe Network Secturity!<p>
+             <p> Welcome to Vector Safe Network Security!<p>
                 <p> Enter your login information to continue</p>
             <br></br>
             <form method="POST" action="customerconfirm.php">
