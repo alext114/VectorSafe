@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `account` (
   `a_ID` int(11) NOT NULL,
-  `a_Email` varchar(255) NOT NULL,
+  `a_PhoneNum` int(10) NOT NULL,
   `a_FName` varchar(60) NOT NULL,
   `a_LName` varchar(60) NOT NULL,
   `a_Username` varchar(60) NOT NULL,
@@ -40,14 +40,14 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`a_ID`, `a_Email`, `a_FName`, `a_LName`, `a_Username`, `a_Password`) VALUES
-(1, 'guevarab2@gmail.com', 'Brian', 'Guevara', 'guevarab2', 'brian123');
+(1, '5555555555', 'Brian', 'Guevara', 'guevarab2', 'brian123');
 
 -- Table structure for table `admins`
 --
 
 CREATE TABLE `admins` (
   `admin_ID` int(11) NOT NULL,
-  `admin_Email` varchar(255) NOT NULL,
+  `admin_PhoneNum` int(10) NOT NULL,
   `admin_FName` varchar(60) NOT NULL,
   `admin_LName` varchar(60) NOT NULL,
   `admin_Username` varchar(60) NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`admin_ID`, `admin_Email`, `admin_FName`, `admin_LName`, `admin_Username`, `admin_Password`) VALUES
-(1, 'genesisnovas@gmail.com', 'Genesis', 'Novas', 'Gnovas, '12345');
+(1, '5555555555', 'Genesis', 'Novas', 'Gnovas, '12345');
 
 -- --------------------------------------------------------
 
