@@ -12,8 +12,8 @@
     <body>
     <div class="jumbotron" style="background-color:#CCD1D1;">
             <div class="container text-center">
-                <h1>Super Music Town</h1>
-                <p>Striving to bring you better products, everyday</p>
+                <h1>VectorSafe</h1>
+                <p>A Network Security Solution</p>
             </div>
     </div>
 <div style="background-color:#CCD1D1;">
