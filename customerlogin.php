@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>E-commerce Website</title>
+        <title>VectorSafe</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="productStyle.css">
@@ -24,7 +24,7 @@
              <p> Welcome to Vector Safe Network Security!<p>
                 <p> Enter your login information to continue</p>
             <br></br>
-            <form method="POST" action="customerconfirm.php">
+            <form method="POST" action="customerlogin2.php">
            <div class="form-group"> <span class="glyphicon glyphicon-user"></span>
         <label for="usr">Username:</label> 
          <input type="text" class="form-control" id="usr" name="username" required>
