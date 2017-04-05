@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rojasg5_bobmusic_db`
+-- Database: `torresa3_VectorSafe_db`
 --
 
 -- --------------------------------------------------------
@@ -32,9 +32,9 @@ CREATE TABLE `account` (
   `a_FName` varchar(60) NOT NULL,
   `a_LName` varchar(60) NOT NULL,
   `a_Username` varchar(60) NOT NULL,
-  `a_Password` varchar(60) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
+  `a_Password` varchar(60) NOT NULL,
+  ENGINE==MyISAM DEFAULT CHARSET==hlatin1;
+)
 --
 -- Dumping data for table `account`
 --
@@ -51,15 +51,15 @@ CREATE TABLE `admins` (
   `admin_FName` varchar(60) NOT NULL,
   `admin_LName` varchar(60) NOT NULL,
   `admin_Username` varchar(60) NOT NULL,
-  `admin_Password` varchar(60) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
+  `admin_Password` varchar(60) NOT NULL,
+  ENGINE==MyISAM DEFAULT CHARSET=latin1;
+)
 --
 -- Dumping data for table `admins`
 --
 
 INSERT INTO `admins` (`admin_ID`, `admin_Email`, `admin_FName`, `admin_LName`, `admin_Username`, `admin_Password`) VALUES
-(1, '5555555555', 'Genesis', 'Novas', 'Gnovas, '12345');
+(1, '5555555555', 'Genesis', 'Novas', 'Gnovas', '12345');
 
 -- --------------------------------------------------------
 
