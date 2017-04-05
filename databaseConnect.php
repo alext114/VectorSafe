@@ -1,7 +1,7 @@
 <?php
 
 //Connect to database using PDO 
-$dsn = 'mysql:host=localhost;dbname=rojasg5_bobmusic_db';
+$dsn = 'mysql:host=localhost;dbname=torresa3_VectorSafe_db';
 $username = 'username';
 $password = 'password';
 
