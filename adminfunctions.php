@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html>
-<!--Displays admin functions.-->
 <?php include 'adminheader.php'; ?>
-      <div class="container text-center">
-            <h1>Welcome, Admin!</h4><br>
-            <h2>Select an option below: </h1><br>
+<div style="background-color:#CCD1D1;">
+    <div class="container">
+       <div class="jumbotron" style="background-color:#CCD1D1;">
+             <h2> System Administration ToolBox!</h2>
+               
+            <br></br>
+            <p><img src="UserAccounts.png" width="60" height="60"><a href="employeeindex.php">Manager User Accounts</a></p>
+             <p><img src="Configuration.png" width="60" height="60">Configure Authentication Codes </p>
+             <p><img src="TroubleShoot.png" width="60" height="60">Troubleshoot SSH Connection Settings </p>
+             <p><img src="Logout.png" width="60" height="60"><a href="adminlogout.php">Log Out </p>
 
-
-       </div>
-
-      <div class="container">
-      <div class="form-group"> <span class="glyphicon glyphicon-user"></span>
-      <p><a href="createaccount.php">Create Admin Account</a></p>
-      <p><a href="employeecreateaccount.php">Create Employee Account</a></p>
-      <p><a href="createmanager.php">Create Manager Account</a></p>
-      <p><a href="accountlist.php">View Customer List</a></p>
-      <p><a href="employeelist.php">View Employee List</a></p>
-      <p><a href="managerlist.php">View Manager List</a></p>
-      <p><a href="adminlist.php">View Admin List</a></p>  
-      </div>
-      </div>
-  </body>
-
+</div>
+<div class="jumbotron" style="background-color:#CCD1D1;">
+<p align="center"><a href="customersignup.php">Register</a></p>
+  
+</div>
+<div class="container">
+</div>
+    </body>
 </html>

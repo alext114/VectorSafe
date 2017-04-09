@@ -1,7 +1,7 @@
 <?php
 
 //connect to database using mysqli
-$db = mysqli_connect("localhost", "username", "password", "rojasg5_bobmusic_db");
+$db = mysqli_connect("localhost", "username", "password", "torresa3_VectorSafe");
 
 if(!$db) 
 {

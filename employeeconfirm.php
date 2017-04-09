@@ -6,11 +6,11 @@
   //connect to database
   include '../dbh.php';
   global $db;
-  //receives user input for login from form in adminlogin.php
+  //receives user input for login from form in employeelogin.php
   $user_name = mysqli_real_escape_string($db, $_POST['username']);
   $password = mysqli_real_escape_string($db, $_POST['pass']);
-  //query the admin table
-  $query = mysqli_query($db, "SELECT * FROM admins WHERE admin_Username='$user_name'");
+  //query the employee table
+  $query = mysqli_query($db, "SELECT * FROM employee WHERE e_Username='$user_name'");
   //checks if table exists
   $exists = mysqli_num_rows($query);
   $table_users = "";
@@ -23,10 +23,10 @@
       {
         /*the first username row is passed on to $table_users,
         and so on until the query is finished*/
-        $table_users = $row['admin_Username'];
+        $table_users = $row['e_Username'];
         /*the first password row is passed on to $table_password,
         and so on until the query is finished*/
-        $table_password = $row['admin_Password'];
+        $table_password = $row['e_Password'];
       }
       //checks if there are any matching fields
       if(($user_name == $table_users) && ($password == $table_password))
@@ -41,16 +41,30 @@
       else
       {
         print '<script>alert("Incorrect Password!");</script>';
-        //redirects to adminlogin.php
-        print '<script>window.location.assign("adminlogin.php");</script>';
+        //redirects to employeelogin.php
+        print '<script>window.location.assign("employeelogin.php");</script>';
       }
   }
   //if table does not exist or no existing username in table
   else
   {
     print '<script>alert("Incorrect Username!");</script>';
-    //redirects to adminlogin.php
-    print '<script>window.location.assign("adminlogin.php");</script>';
+    //redirects to employee.php
+    print '<script>window.location.assign("employeelogin.php");</script>';
   }
-  header('Location: adminfunctions.php');
+  header('Location: customerlogin2.php');
 ?>
+
+<!DOCTYPE html>
+<html>
+<!--Displays page upon successful login.-->
+<?php include 'adminheader.php'; ?>
+<body>
+
+      <h1>Employee Login Confirmation </h1><br>
+      <h4>Welcome, <?php echo $_SESSION['user_name']; ?>!</h4><br>
+    
+     
+  </body>
+
+</html>
